@@ -1,0 +1,76 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Roboto, Candara, Verdana;
+}
+
+body {
+  background-color: #362852;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+
+body.correct {
+  background-color: #136f63;
+}
+
+body.wrong {
+  background-color: #D1495B;
+}
+
+.container {
+  width: 800px;
+  max-width: 80%;
+  background-color: #EEFFDB;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  background-color: #AEA4BF;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #241B37;
+  outline: none;
+}
+
+.btn:hover {
+  border-color: black;
+}
+
+.btn-correct {
+  background-color: #136f63;
+}
+
+.btn-wrong {
+  background-color: #D1495B;
+}
+
+.start-btn, .next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
